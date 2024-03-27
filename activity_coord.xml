@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/pink"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street Address"
+        android:textSize="22sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/latitude_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude: "
+        android:textSize="22sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/longitude_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: "
+        android:textSize="22sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/button_location"
+        android:text="Get Location"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:backgroundTint="#D7889B"
+        android:textColor="#ffe4f2"/>
+
+</LinearLayout>

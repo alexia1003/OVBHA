@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/trei"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/map_button"
+        android:layout_width="102dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="547dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="118dp"
+        android:backgroundTint="#D7889B"
+        android:text="Map"
+        android:textColor="#ffe4f2" />
+
+    <Button
+        android:id="@+id/coord_button"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="492dp"
+        android:backgroundTint="#D7889B"
+        android:text="Coordinates"
+        android:textColorLink="#ffe4f2" />
+
+    <Button
+        android:id="@+id/sos_button"
+        android:layout_width="102dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="367dp"
+        android:layout_marginEnd="310dp"
+        android:layout_marginBottom="298dp"
+        android:backgroundTint="#D7889B"
+        android:onClick="sendSOSMessage"
+        android:text="SOS"
+        android:textColorLink="#ffe4f2" />
+
+    <Button
+        android:id="@+id/communication_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="671dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:backgroundTint="#D7889B"
+        android:onClick="streamlineCommunication"
+        android:text="Communication"
+        android:textColorLink="#ffe4f2" />
+
+    <Button
+        android:id="@+id/weather_button"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="367dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="297dp"
+        android:backgroundTint="#D7889B"
+        android:onClick="openWeatherActivity"
+        android:text="Weather"
+        android:textColorLink="#ffe4f2" />
+
+    <TextView
+        android:id="@+id/diagnostic_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnostic Result"
+        android:textSize="18sp"
+        android:textColor="#ffe4f2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/diagnose_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnose"
+        android:backgroundTint="#D7889B"
+        android:textColor="#ffe4f2"
+        android:layout_below="@id/diagnostic_result_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/checklistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="673dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#D7889B"
+        android:text="Open Checklist"
+        android:textColor="#ffe4f2"/>
+
+</RelativeLayout>
