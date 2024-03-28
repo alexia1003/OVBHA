@@ -105,13 +105,6 @@ public class CoordActivity extends AppCompatActivity implements LocationListener
                 double longitude = location.getLongitude();
                 latitudeTextView.setText("Latitude: " + latitude);
                 longitudeTextView.setText("Longitude: " + longitude);
-
-                // Pass latitude and longitude to WeatherActivity
-//                Intent intent = new Intent(CoordActivity.this, WeatherActivity.class);
-//                intent.putExtra("latitude", latitude);
-//                intent.putExtra("longitude", longitude);
-//                startActivity(intent);
-
             }
 
         }catch (Exception e){
